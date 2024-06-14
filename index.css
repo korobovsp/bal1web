@@ -530,7 +530,7 @@ body
    margin-right: auto;
    margin-left: auto;
 }
-#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3
+#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3, #LayoutGrid9 > .col-4
 {
    box-sizing: border-box;
    font-size: 0;
@@ -539,7 +539,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3
+#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3, #LayoutGrid9 > .col-4
 {
    flex: 0 0 auto;
 }
@@ -591,9 +591,25 @@ body
    justify-content: flex-end;
    text-align: right;
 }
+#LayoutGrid9 > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 8.33333333%;
+   max-width: 8.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
 @media (max-width: 768px)
 {
-#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3
+#LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2, #LayoutGrid9 > .col-3, #LayoutGrid9 > .col-4
 {
    flex-basis: 100% !important;
    max-width: 100% !important;
