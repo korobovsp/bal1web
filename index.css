@@ -1151,7 +1151,7 @@ body
 }
 #wb_Text10 
 {
-   background-color: transparent;
+   background-color: #FF0000;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
@@ -1168,5 +1168,5 @@ body
    display: inline-block;
    margin: 0;
    width: 940px;
-   height: 20px;
+   height: 30px;
 }
