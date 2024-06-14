@@ -1071,3 +1071,25 @@ body
    box-sizing: border-box;
    width: 100%;
 }
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   vertical-align: top;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading2
+{
+   color: #FF0000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: left;
+   text-transform: none;
+}
