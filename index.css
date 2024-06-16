@@ -28,16 +28,14 @@ body
 #PageHeader
 {
    box-sizing: border-box;
-   padding: 0 15px 0 15px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
    margin-right: auto;
    margin-left: auto;
 }
-#PageHeader > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#PageHeader > .row > .col-1, #PageHeader > .row > .col-2, #PageHeader > .row > .col-3
+#PageHeader > .col-1, #PageHeader > .col-2, #PageHeader > .col-3
 {
    box-sizing: border-box;
    font-size: 0;
@@ -46,56 +44,64 @@ body
    padding-left: 15px;
    position: relative;
 }
-#PageHeader > .row > .col-1, #PageHeader > .row > .col-2, #PageHeader > .row > .col-3
+#PageHeader > .col-1, #PageHeader > .col-2, #PageHeader > .col-3
 {
-   float: left;
+   flex: 0 0 auto;
 }
-#PageHeader > .row > .col-1
+#PageHeader > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 16.66666667%;
-   text-align: left;
-}
-#PageHeader > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   width: 66.66666667%;
+   flex-basis: 8.33333333%;
+   max-width: 8.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
    text-align: center;
 }
-#PageHeader > .row > .col-3
+#PageHeader > .col-2
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 16.66666667%;
-   text-align: right;
+   flex-basis: 83.33333333%;
+   max-width: 83.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
-#PageHeader:before,
-#PageHeader:after,
-#PageHeader .row:before,
-#PageHeader .row:after
+#PageHeader > .col-3
 {
-   display: table;
-   content: " ";
-}
-#PageHeader:after,
-#PageHeader .row:after
-{
-   clear: both;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 8.33333333%;
+   max-width: 8.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
 @media (max-width: 480px)
 {
-#PageHeader > .row > .col-1, #PageHeader > .row > .col-2, #PageHeader > .row > .col-3
+#PageHeader > .col-1, #PageHeader > .col-2, #PageHeader > .col-3
 {
-   float: none;
-   width: 100%;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
 }
 }
 #PageHeader-divider-top
@@ -140,8 +146,8 @@ body
 }
 #FontAwesomeIcon1
 {
-   height: 40px;
-   width: 40px;
+   height: 20px;
+   width: 20px;
 }
 .FontAwesomeIcon1
 {
@@ -162,14 +168,14 @@ body
 {
    color: #FFFFFF;
    display: inline-block;
-   font-size: 40px;
-   line-height: 40px;
+   font-size: 20px;
+   line-height: 20px;
    vertical-align: middle;
-   width: 39px;
+   width: 19px;
 }
 #wb_FontAwesomeIcon1:hover #FontAwesomeIcon1 i
 {
-   color: #B7B7B7;
+   color: #000000;
 }
 #wb_Heading1
 {
@@ -921,6 +927,7 @@ body
    padding: 0;
    margin: 0;
    text-align: center;
+   animation: heartbeat-1 20000ms linear 0ms infinite normal;
 }
 #wb_Text8
 {
@@ -954,8 +961,8 @@ body
    box-sizing: border-box;
    padding: 0;
    display: inline-block;
-   width: 65px;
-   height: 65px;
+   width: 50px;
+   height: 50px;
    vertical-align: top;
 }
 #wb_RollOver1
@@ -1170,4 +1177,34 @@ body
    margin: 0;
    width: 936px;
    height: 9px;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text11
+{
+   color: #212529;
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 36px;
+}
+#wb_Text11 p, #wb_Text11 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text11
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
 }

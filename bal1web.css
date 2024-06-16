@@ -6,6 +6,14 @@
         url('MaterialIcons-Regular.woff') format('woff'),
         url('MaterialIcons-Regular.ttf') format('truetype');
 }
+@keyframes heartbeat-1
+{
+   0% { transform: rotate(0deg) ;  }
+   15% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
 @keyframes slide-left-in
 {
    0% { transform: translate(-100%,0px) rotate(1deg) ; opacity: 0; transform-origin: 0 0;  }
