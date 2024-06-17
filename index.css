@@ -1184,6 +1184,7 @@ body
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
+   display: none;
    padding: 0;
    margin: 0;
    text-align: left;
@@ -1202,6 +1203,49 @@ body
    padding: 0;
 }
 #wb_Text11
+{
+   display: none;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#HorizontalLine1
+{
+   border-color: #34495E;
+   border-style: solid;
+   border-bottom-width: 10px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   height: 0 !important;
+   line-height: 0 !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text12 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text12
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 37px;
+   line-height: 41.5px;
+}
+#wb_Text12 p, #wb_Text12 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text12
 {
    display: block;
    margin: 0;
