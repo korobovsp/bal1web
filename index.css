@@ -1334,37 +1334,6 @@ body
    width: 936px;
    height: 9px;
 }
-#wb_Text11 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: none;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text11
-{
-   color: #212529;
-   font-family: Arial;
-   font-weight: 400;
-   font-size: 32px;
-   line-height: 36px;
-}
-#wb_Text11 p, #wb_Text11 ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Text11
-{
-   display: none;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_Text12 
 {
    background-color: transparent;
