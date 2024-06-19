@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://github.com/korobovsp/bal1web/blob/main/sitemap.xml
+Sitemap: https://korobovsp.github.io/bal1web/sitemap.xml
