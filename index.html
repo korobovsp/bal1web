@@ -65,7 +65,7 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="col-1">
 <div id="wb_Text1">
-<p>Версия 1.13.0.0 (x64)-Windows 7-11</p>
+<p>Версия 1.14.0.0 (x64)-Windows 7-11</p>
 </div>
 </div>
 </div>
@@ -109,14 +109,14 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="Tabs1" style="display:inline-block;width:100%;z-index:17;">
+<div id="Tabs1" style="display:inline-block;width:100%;z-index:19;">
 <ul>
 <li role="presentation"><a href="#tabs1-page-1"><span>О программе</span></a></li>
 <li role="presentation"><a href="#tabs1-page-2"><span>История</span></a></li>
 <li role="presentation"><a href="#tabs1-page-3"><span>Доплнительные модули</span></a></li>
 </ul>
 <div id="tabs1-page-1">
-<div id="wb_Text4">
+<div id="wb_about">
 <p>Программа bal1web предназначена для создания аудиокниг.</p>
 <p>Выбирайте практически любой язык на Ваш вкус в режимах онлайн и офлайн.</p>
 <p>Популярные онлайн сервисы в одной программе.</p>
@@ -132,14 +132,22 @@ $(document).ready(function()
 <p>-Python&nbsp;<a href="https://www.python.org/downloads">https://www.python.org/downloads</a></p>
 <p>-edge-tts&nbsp;<a href="https://pypi.org/project/edge-tts">https://pypi.org/project/edge-tts</a></p>
 </div>
+<div id="wb_Image4" style="display:inline-block;width:523px;height:337px;z-index:10;">
+<img src="images/tts.png" id="Image4" alt="" width="523" height="331">
+</div>
+<div id="wb_Text4">
+<p>-Python <a href="https://www.python.org/downloads">https://www.python.org/downloads</a></p>
+<p>-edge-tts <a href="https://pypi.org/project/edge-tts">https://pypi.org/project/edge-tts</a></p>
+</div>
 </div>
 <div id="tabs1-page-2">
-<div id="wb_Text9">
+<div id="wb_history">
 <p>1.7.0.0-кнопка о программе</p>
 <p>1.8.0.0-добален цвет CPU( &gt; 90%), добавлена метадата при склейке mp3, оптимизация kill time EDGE </p>
 <p>1.9.0.0-добавлена метадата при склейке ogg,&nbsp;добавлен офлайн модуль Piper TTS</p>
 <p>1.10.0.0 -добавлен офлайн модуль Silero TTS</p>
 <p>1.12.0.0 -исправлен прогрессбар и корзина файлов </p>
+<p>1.14.0.0 -правки интерфеса, добавлены кнопки edge </p>
 </div>
 </div>
 <div id="tabs1-page-3">
@@ -147,7 +155,7 @@ $(document).ready(function()
 <div id="LayoutGrid6">
 <div class="col-1">
 <div id="wb_Text13">
-<p>Офлайн модуль Piper TTS.</p>
+<p>*Офлайн модуль Piper TTS*</p>
 <p><a href="https://www.youtube.com/watch?v=GGvdq3giiTQ">https://www.youtube.com/watch?v=GGvdq3giiTQ</a></p>
 <p>Для использования нужно скачать с сайта разработчика модуль</p>
 <p><a href="https://github.com/rhasspy/piper/releases">https://github.com/rhasspy/piper/releases</a></p>
@@ -162,18 +170,18 @@ $(document).ready(function()
 <p>piper_rus = 250 MB</p>
 <p>piper_eng = 2.4 GB</p>
 <br>
-<p>Офлайн модуль Silero TTS.</p>
+<p>*Офлайн модуль Silero TTS*</p>
 <p>В модуле используется PyTorch, позволяет использовать CUDA (ускорение за счет вмдеокарты)</p>
 <p><a href="https://github.com/snakers4/silero-models">https://github.com/snakers4/silero-models</a></p>
 <p>Можно скачать с сайта <a href="https://pytorch.org/ ">https://pytorch.org/ </a>и установить pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 , возможно для новых видеокарт будет лучше выбрать CUDA 12.1</p>
 </div>
-<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:12;">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:14;">
 <img src="images/2024%2d06%2d18_201606.jpg" id="Image1" alt="" width="493" height="229">
 </div>
 <div id="wb_Text15">
-<span style="color:#212529;font-family:Arial;font-size:27px;">потом скачать silero models https://github.com/snakers4/silero-models и закинуть их в папку silero</span>
+<span style="color:#212529;font-family:Arial;font-size:27px;">потом скачать silero models <a href="https://github.com/snakers4/silero-models ">https://github.com/snakers4/silero-models </a>и закинуть их в папку silero</span>
 </div>
-<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:14;">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:16;">
 <img src="images/2024%2d06%2d18_202730.jpg" id="Image2" alt="" width="493" height="353">
 </div>
 <div id="wb_Text11">
@@ -192,7 +200,7 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:18;">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:20;">
 <div id="wb_Text5">
 <p><a href="https://disk.yandex.ru/d/HRc4D0av4wE4Jw">СКАЧАТЬ&nbsp;МОДУЛИ</a></p>
 </div>
@@ -235,7 +243,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:25;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:27;">
 <a href="https://web.telegram.org/k/#@myttsinfo"><div id="FontAwesomeIcon6"><i class="fa fa-brands fa-telegram"></i></div></a>
 </div>
 </div>

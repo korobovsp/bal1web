@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Allow: /images/
 Sitemap: https://korobovsp.github.io/bal1web/sitemap.xml
