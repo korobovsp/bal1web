@@ -1754,6 +1754,7 @@ body
 }
 #wb_Image8
 {
+   height: 100%;
    margin: 0;
    vertical-align: top;
 }
@@ -1765,11 +1766,9 @@ body
    padding: 0;
    display: block;
    width: 100%;
-   height: auto;
-   max-width: 523px;
-   margin-left: auto;
-   margin-right: auto;
+   height: 100%;
    vertical-align: top;
+   object-fit: scale-down;
 }
 #wb_Text16 
 {
