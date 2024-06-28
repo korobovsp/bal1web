@@ -65,7 +65,7 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="col-1">
 <div id="wb_Text1">
-<p>Версия 1.19.0.0 (x64)-Windows 7-11</p>
+<p>Версия 1.20.0.0 (x64)-Windows 7-11</p>
 </div>
 </div>
 </div>
@@ -109,11 +109,12 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="Tabs1" style="display:inline-block;width:100%;z-index:21;">
+<div id="Tabs1" style="display:inline-block;width:100%;z-index:30;">
 <ul>
 <li role="presentation"><a href="#tabs1-page-1"><span>О программе</span></a></li>
 <li role="presentation"><a href="#tabs1-page-2"><span>История</span></a></li>
 <li role="presentation"><a href="#tabs1-page-3"><span>Доплнительные модули</span></a></li>
+<li role="presentation"><a href="#tabs1-page-4"><span>Про словари</span></a></li>
 </ul>
 <div id="tabs1-page-1">
 <div id="wb_about">
@@ -156,6 +157,7 @@ $(document).ready(function()
 <p>1.16.0.0 -к некоторым модулям добавлена опция &lt;тест голоса&gt;</p>
 <p>1.17.0.0 -добавлен онлайн модуль Yandex на .NET</p>
 <p>1.19.0.0 -добавлен онлайн модуль EdgeTTS на .NET</p>
+<p>1.20.0.0 -добавлены опции для словарей EDGE, EdgeTTS</p>
 </div>
 </div>
 <div id="tabs1-page-3">
@@ -195,8 +197,48 @@ $(document).ready(function()
 <div id="wb_Text11">
 <span style="color:#000000;font-family:Arial;font-size:27px;">или скачать отсюда, распаковать и в программе указать путь к папке silero.<br>silero ( архив из 3 частей) = 2.3 GB</span>
 </div>
+<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:20;">
+<img src="" id="Image7" alt="">
 </div>
 </div>
+</div>
+</div>
+</div>
+<div id="tabs1-page-4">
+<div id="wb_Text14">
+<p>Модули с этим смайловым значком используют встроенную в консольное приложение (bal4web.exe и bal4yndx.exe) опцию работы со словарями.</p>
+<p>\bal1web\bal4web\readme.rus.txt</p>
+</div>
+<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:23;">
+<img src="images/2024%2d06%2d28_165520.jpg" id="Image6" alt="" width="523" height="352">
+</div>
+<div id="wb_Image8" style="display:block;width:100%;height:auto;z-index:24;">
+<img src="images/2024%2d06%2d28_180353.jpg" id="Image8" alt="" width="523" height="40">
+</div>
+<div id="wb_Text16">
+<p>Для работы в bal1web нужно выбрать опцию &lt;Исп.словари&gt; , кликнуть на зеленую кнопку слева и в правое верхнее окно перетащить нужные словари, порядок обработки сверху вниз, не отмеченные галочкой словари пропускаются. Удаление двойной клик.</p>
+<p>По опыту использования.</p>
+<p>Если, например взять словари для Яндекса из Демагог</p>
+</div>
+<div id="wb_Image9" style="display:block;width:100%;height:auto;z-index:26;">
+<img src="images/2024%2d06%2d28_170848.jpg" id="Image9" alt="" width="523" height="626">
+</div>
+<div id="wb_Text17">
+<p>То все наглухо виснет где-то на 3.5_RG….</p>
+<p>Если свои коротенькие, то работает.</p>
+<p>Для озвучки в модулях EDGE, EdgeTTS можно подключать свой словарь и его пополнять.</p>
+</div>
+<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:28;">
+<img src="images/2024%2d06%2d28_171519.jpg" id="Image10" alt="" width="523" height="131">
+</div>
+<div id="wb_Text18">
+<p>В нем, например внес очистку частых косяков озвучки знаков (точка, звездочка)</p>
+<p>*=</p>
+<p>."="</p>
+<p>Структура простая (что ищем = на что заменяем)</p>
+<p>день=ночь</p>
+<p>лето=зима</p>
+<p>Удачи! Приятного прослушивания!</p>
 </div>
 </div>
 </div>
@@ -208,7 +250,7 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:22;">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:31;">
 <div id="wb_Text5">
 <p><a href="https://disk.yandex.ru/d/HRc4D0av4wE4Jw">СКАЧАТЬ&nbsp;МОДУЛИ</a></p>
 </div>
@@ -251,7 +293,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:29;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:38;">
 <a href="https://web.telegram.org/k/#@myttsinfo"><div id="FontAwesomeIcon6"><i class="fa fa-brands fa-telegram"></i></div></a>
 </div>
 </div>
