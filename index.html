@@ -109,12 +109,13 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="Tabs1" style="display:inline-block;width:100%;z-index:30;">
+<div id="Tabs1" style="display:inline-block;width:100%;z-index:31;">
 <ul>
 <li role="presentation"><a href="#tabs1-page-1"><span>О программе</span></a></li>
 <li role="presentation"><a href="#tabs1-page-2"><span>История</span></a></li>
 <li role="presentation"><a href="#tabs1-page-3"><span>Доплнительные модули</span></a></li>
 <li role="presentation"><a href="#tabs1-page-4"><span>Про словари</span></a></li>
+<li role="presentation"><a href="#tabs1-page-5"><span>Видео</span></a></li>
 </ul>
 <div id="tabs1-page-1">
 <div id="wb_about">
@@ -159,6 +160,9 @@ $(document).ready(function()
 <p>1.19.0.0 -добавлен онлайн модуль EdgeTTS на .NET</p>
 <p>1.20.0.0 -добавлены опции для словарей EDGE, EdgeTTS</p>
 <p>1.21.0.0 -исправления в pyt2s, добавлены опции "Пауза" и "Размер" для более точной настройки и проверка обновлений</p>
+<p>1.22.0.0 -выбор при разбивке</p>
+<p>1.25.0.0 -словари Regex(.rex) для EDGE, EdgeTTS </p>
+<p>1.26.0.0 -исправлено счетчик размера GB, мелкие ошибки при докачке</p>
 </div>
 </div>
 <div id="tabs1-page-3">
@@ -196,7 +200,7 @@ $(document).ready(function()
 <img src="images/2024%2d06%2d18_202730.jpg" id="Image2" alt="" width="493" height="353">
 </div>
 <div id="wb_Text11">
-<span style="color:#000000;font-family:Arial;font-size:27px;">или скачать отсюда, распаковать и в программе указать путь к папке silero.<br>silero ( архив из 3 частей) = 2.3 GB</span>
+<span style="color:#000000;font-family:Arial;font-size:27px;">или скачать отсюда, распаковать и в программе указать путь к папке silero.<br>silero ( архив из 3 частей) = 2.3 GB<br>Самые быстрые модули работают на собственном коде и имеют логотип .NET (Yandex и EdgeTTS)!</span>
 </div>
 <div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:20;">
 <img src="" id="Image7" alt="">
@@ -228,6 +232,7 @@ $(document).ready(function()
 <p>То все наглухо виснет где-то на 3.5_RG….</p>
 <p>Если свои коротенькие, то работает.</p>
 <p>Для озвучки в модулях EDGE, EdgeTTS можно подключать свой словарь и его пополнять.</p>
+<p>1.dic</p>
 </div>
 <div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:28;">
 <img src="images/2024%2d06%2d28_171519.jpg" id="Image10" alt="" width="523" height="131">
@@ -239,7 +244,21 @@ $(document).ready(function()
 <p>Структура простая (что ищем = на что заменяем)</p>
 <p>день=ночь</p>
 <p>лето=зима</p>
+<p>2 .rex</p>
+<p>\.(?=\S) ☭. </p>
+<p>или без цифр</p>
+<p>(?&lt;!\d)\.(?=\S)(?!\d) ☭. </p>
+<p>Используется Regex</p>
+<p>Структура (что ищем ☭&nbsp;на что заменяем)</p>
 <p>Удачи! Приятного прослушивания!</p>
+</div>
+</div>
+<div id="tabs1-page-5">
+<div id="wb_MediaPlayer1" style="display:block;width:100%;z-index:30;">
+<video id="MediaPlayer1" autoplay controls>
+<source src="https://korobovsp.github.io/bal1web/bal1web.mp4" type="video/mp4">
+</video>
+
 </div>
 </div>
 </div>
@@ -251,7 +270,7 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:31;">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:32;">
 <div id="wb_Text5">
 <p><a href="https://disk.yandex.ru/d/HRc4D0av4wE4Jw">СКАЧАТЬ&nbsp;МОДУЛИ</a></p>
 </div>
@@ -294,7 +313,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:38;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:39;">
 <a href="https://web.telegram.org/k/#@myttsinfo"><div id="FontAwesomeIcon6"><i class="fa fa-brands fa-telegram"></i></div></a>
 </div>
 </div>
