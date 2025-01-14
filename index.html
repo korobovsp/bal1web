@@ -21,6 +21,9 @@
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<link rel="stylesheet" href="mediaelementjs/mediaelementplayer.min.css" />
+<script src="mediaelementjs/mediaelement-and-player.min.js"></script>
+
 <script>
 $(document).ready(function()
 {
@@ -31,6 +34,7 @@ $(document).ready(function()
       event: 'mouseover',
       collapsible: false
    });
+$('#Extension1').mediaelementplayer({features:['playpause', 'current', 'progress', 'duration', 'tracks', 'volume'], loop:true, startVolume: 70/100});
 });
 </script>
 </head>
@@ -55,8 +59,14 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:20px;height:20px;text-align:center;z-index:2;">
+<div id="wb_FontAwesomeIcon1" style="display:none;width:20px;height:20px;text-align:center;z-index:2;">
 <div id="FontAwesomeIcon1"><i class="FontAwesomeIcon1"></i></div>
+</div>
+<div id="wb_Extension1" style="display:block;position:relative;width:100%;z-index:3;">
+<audio id="Extension1" style="width:100%;height:100%;" controls="controls" autoplay  width="100%" height="100%">
+<source src="multi.mp3" type="audio/mpeg">
+</audio>
+
 </div>
 </div>
 </div>
@@ -96,8 +106,8 @@ $(document).ready(function()
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
-<div id="wb_RollOver1" style="display:block;width:100%;z-index:7;">
-<div id="RollOver1" style="overflow:hidden;z-index:7">
+<div id="wb_RollOver1" style="display:block;width:100%;z-index:8;">
+<div id="RollOver1" style="overflow:hidden;z-index:8">
 <a href="">
 <img class="hover" alt="bal1web-программа для создания аудиокниг(fb2 to mp3 tts)" title="bal1web" src="images/bal1web.gif" width="372" height="443">
 <span><img alt="bal1web-программа для создания аудиокниг(fb2 to mp3 tts)" title="bal1web" src="images/2024%2d06%2d23_005915.jpg" width="372" height="443"></span>
@@ -105,36 +115,27 @@ $(document).ready(function()
 </div>
 </div>
 <div id="wb_червоник">
-<span style="color:#000000;font-family:Arial;font-size:16px;">1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS</span>
+<span style="color:#000000;font-family:Arial;font-size:16px;">1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSофлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модульофлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSофлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTSдобавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS1.10.0.0 -добавлен офлайн модуль Silero TTS</span>
 </div>
 </div>
 <div class="col-2">
-<div id="Tabs1" style="display:inline-block;width:100%;z-index:31;">
+<div id="Tabs1" style="display:inline-block;width:100%;z-index:32;">
 <ul>
 <li role="presentation"><a href="#tabs1-page-1"><span>О программе</span></a></li>
 <li role="presentation"><a href="#tabs1-page-2"><span>История</span></a></li>
-<li role="presentation"><a href="#tabs1-page-3"><span>Доплнительные модули</span></a></li>
+<li role="presentation"><a href="#tabs1-page-3"><span>Дополнительные модули</span></a></li>
 <li role="presentation"><a href="#tabs1-page-4"><span>Про словари</span></a></li>
 <li role="presentation"><a href="#tabs1-page-5"><span>Видео</span></a></li>
 </ul>
 <div id="tabs1-page-1">
 <div id="wb_about">
+<p>НОВОЕ! - 3 голоса(мультиозвучка)</p>
 <p>Программа bal1web предназначена для создания аудиокниг.</p>
 <p>Выбирайте практически любой язык на Ваш вкус в режимах онлайн и офлайн.</p>
 <p>Популярные онлайн сервисы в одной программе.</p>
-<p>-Создает wav, mp3 и ogg аудио файлы, может конвертировать и склеивать их на лету.</p>
-<p>-Многопотоковая обработка (книга в EdgeTTS за 2 мин.)</p>
-<p>-Программа позволяет искать уже готовые аудиокниги в сети.</p>
-<p>-Может проверять ошибки правописания используя WeCantSpell.Hunspel или Microsoft Office 2016-2021(365)</p>
-<p>-Для некоторых сервисов имеет возможность подключать словари для исправления ударений при озвучке.</p>
-<p>-Создает базу данных и позволяет не озвучивать дубли.</p>
-<p>-Вытаскивает картинки из книги и позволяет их просматривать.</p>
-<p>-Имеет возможность самому пользователю редактировать голоса для сервисов.</p>
-<p>-Предает готовые книги на мобильные устройства.</p>
-<p>-Может конвертировать книги в разные форматы.</p>
+<p>Создает wav, mp3 и ogg аудио файлы, может конвертировать и склеивать их на лету.</p>
 <br>
 <p>Поддерживаются форматы файлов: AZW, AZW3, CHM, DjVu, DOC, DOCX, EML, EPUB, FB2, FB3, HTML, LIT, MD, MHT, MOBI, ODP, ODS, ODT, PDB, PDF, PPT, PPTX, PRC, RTF, TCR, TXT, WPD, WRI, XLS, XLSX&nbsp;+ в архивах zip, rar, 7z.</p>
-<p>Для работы требуется .NET 9 и коннектор Microsoft.ACE.OLEDB.16.0 (входит в состав офиса или устанавливается отдельно)</p>
 <p>Для работы используются утилиты:</p>
 <p>- (BLB2TXT, BAL4WEB, BAL4YNDX) с сайта&nbsp;<a href="https://www.cross-plus-a.com/ru/btext.html">https://www.cross-plus-a.com/ru/btext.html</a></p>
 <p>-ffmpeg&nbsp;<a href="https://www.gyan.dev/ffmpeg/builds">https://www.gyan.dev/ffmpeg/builds</a></p>
@@ -142,13 +143,12 @@ $(document).ready(function()
 <p>-oggenc2&nbsp;<a href="https://www.rarewares.org/ogg-oggenc.php">https://www.rarewares.org/ogg-oggenc.php</a></p>
 <p>-LAME&nbsp;<a href="https://lame.sourceforge.io">https://lame.sourceforge.io</a></p>
 </div>
-<div id="wb_Image4" style="display:inline-block;width:523px;height:337px;z-index:10;">
+<div id="wb_Image4" style="display:inline-block;width:523px;height:337px;z-index:11;">
 <img src="images/tts.png" id="Image4" alt="" width="523" height="331">
 </div>
 <div id="wb_Text4">
 <p>-Python <a href="https://www.python.org/downloads">https://www.python.org/downloads</a></p>
 <p>-edge-tts <a href="https://pypi.org/project/edge-tts">https://pypi.org/project/edge-tts</a></p>
-<p>-Сalibre</p>
 </div>
 </div>
 <div id="tabs1-page-2">
@@ -162,7 +162,7 @@ $(document).ready(function()
 <p> 1.15.0.0 -добавлены онлайн модули pyt2s и gTTS, для новых модулей теперь можно редактировать языки и добавлять рейтинги (нужные пометки для себя) в bal1web.accdb (Access) </p>
 <br>
 </div>
-<div id="wb_Image5" style="display:inline-block;width:522px;height:378px;z-index:13;">
+<div id="wb_Image5" style="display:inline-block;width:522px;height:378px;z-index:14;">
 <img src="images/2024%2d06%2d23_003026.jpg" id="Image5" alt="" width="522" height="371">
 </div>
 <div id="wb_Text9">
@@ -175,35 +175,34 @@ $(document).ready(function()
 <p>1.25.0.0 -словари Regex(.rex) для EDGE, EdgeTTS </p>
 <p>1.26.0.0 -исправлено счетчик размера GB, мелкие ошибки при докачке</p>
 <p>1.27.0.0 -исправления для pyt2s, прокрутка колесиком между модулями, оптимизация кода</p>
-<p>1.28.0.0 -новый модуль IBM_W с возможностью SSML через словарь < >, изменен разделитель для .dic, добавлена опция введения базы книг в bal1web.accdb</p>
+<p>1.28.0.0 -новый модуль IBM_W с возможностью SSML через словарь &lt; &gt;, изменен разделитель для .dic, добавлена опция введения базы книг в bal1web.accdb</p>
 <p>1.29.0.0 -расширена опция работы с базой книг(можно исключать дубли, удалять записи, менять паттерн для названия...)</p>
 <p>1.30.0.0 -правки в коде извлечения текста и картинок ( теперь для blb2txt файлы длиннее 115 знаков обрезаются , для pandoc распаковываются, если в архиве)</p>
-<p>1.31.0.0 -добавлен конвертер для книг (скачиваем https://calibre-ebook.com/ru/download_windows , устанавливаем и в bal1web в меню <Конвертер> устанавливаем путь к файлу ebook-convert.exe)</p>
-<p>1.32.0.0 -добавлен счетчик замен из словарей, конвертирован EDGERus_test.dic из https://edgetts.github.io/RU.lexx форум https://4pda.to/forum/index.php?showtopic=200728&st=7720#entry125046028</p>
-<p>1.33.0.0 -добавлена опция предупреждения размера загрузки, для словарей .dic (опция $ перед началом: $семьи тут★се́мьи тут), для регистро-независимого поиска и замены</p>
-<p>1.34.0.0 -добавлена опция <ЗАГЛАВНЫЕ в строчные> (вся книга в строчные) для использования упрощенного словаря без $, пробелы до\после\до и после(см. файл про словари)</p>
-<p>1.35.0.0 -добавлена опция <В одну строку> (вся книга в строку, эффективнее работа со словарем)</p>
+<p>1.31.0.0 -добавлен конвертер для книг (скачиваем https://calibre-ebook.com/ru/download_windows , устанавливаем и в bal1web в меню &lt;Конвертер&gt; устанавливаем путь к файлу ebook-convert.exe)</p>
+<p>1.32.0.0 -добавлен счетчик замен из словарей, конвертирован EDGERus_test.dic из https://edgetts.github.io/RU.lexx форум https://4pda.to/forum/index.php?showtopic=200728&amp;st=7720#entry125046028</p>
+<p>1.33.0.0 -добавлена опция предупреждения размера загрузки, для словарей .dic (опция $ перед началом: $семьи тут★се́мьи тут), для регистро-независимого поиска и замены </p>
+<p>1.34.0.0 -добавлена опция &lt;ЗАГЛАВНЫЕ в строчные&gt; (вся книга в строчные) для использования упрощенного словаря без $, пробелы до\после\до и после(см. файл про словари)</p>
+<p>1.35.0.0 -добавлена опция &lt;В одну строку&gt; (вся книга в строку, эффективнее работа со словарем)</p>
 <p>1.36.0.0 -добавлен FTP клиент WinSCP</p>
 <p>1.37.0.0 -добавлен FTP прогресс в статус бар</p>
-<p>1.38.0.0 -добавлен клиент FluentFTP (с ним bal1web при создании 2 и более аудиокниг может одновременно передавать на ftp сервер и конвертировать)</p>
+<p>1.38.0.0 -добавлен клиент FluentFTP (с ним bal1web при создании 2 и более аудиокниг может одновременно передавать на ftp сервер и конвертировать) </p>
 <p>1.39.0.0 -добавлены модули проверки правописания Word 2016-2021 и WeCantSpell.Hunspell</p>
 <p>1.40.0.0 -добавлен модуль кастомного словаря (Ru_En_bal1web.txt)</p>
-<p>1.41.0.0 -улучшена производительность проверки и выбор режима проверки с WeCantSpell.Hunspell, автосортировка и удаление дублей Ru_En_bal1web.txt</p>
+<p>1.41.0.0 -улучшена производительность проверки и выбор режима проверки с WeCantSpell.Hunspell, автосортировка и удаление дублей Ru_En_bal1web.txt </p>
 <p>1.42.0.0 -добавлена опция автоматического определения частей, при проверке орфо все копии обрабатываемых слов помечаются цветом</p>
 <p>1.43.0.0 -добавлена опция авто 5 сек. просмотра картинок из книги</p>
 <p>1.44.0.0 -добавлена опция извлечения и добавления в базу Название книги + автор</p>
 <p>1.45.0.0 -добавлена опция поиска аудиокниг в сети</p>
 <p>1.46.0.0 -добавлен параллельный способ обработки по словарям, в словарь для EDGE, EdgeTTS добавлен ( # - любое слово), исправлено-панели ftp при первом запуске, добавлено отключение уведомлений в орфо</p>
-<p>2.0 -миграция на .NET 9</p>
+<p>2.0 -миграция на NET 9</p>
 <p>2.1 -исправлены некоторые ошибки</p>
 <p>2.2 -запрет на добавление файлов, кроме словарей</p>
 <p>2.3 -выбор адаптера для счетчика сети( двойной клик на "Сеть")</p>
-<p>2.4 -добавлен офлайн модуль Vosk-TTS</p>
+<p>2.4 -добавлен офлайн модуль Vosk-TTS, счетчик видеокарты</p>
 <p>2.5 -добавлена опция загрузки книг(проверки на дубли в базе, на диске), возможность запускать Загрузка и Конвертор через аргументы.</p>
 <p>2.6 -добавлены опци:- удаления кэша Онлайн поиска, - одновременного открытия Орфо и Онлайн поиск</p>
 <p>2.7 -добавлена опция:- Sleep - управление голосом (компьютер в сон)</p>
 <p>2.8 -добавлена опция:- 3 голоса для EdgeTTS (мультиозвучка)</p>
-
 </div>
 </div>
 <div id="tabs1-page-3">
@@ -231,19 +230,19 @@ $(document).ready(function()
 <p><a href="https://github.com/snakers4/silero-models">https://github.com/snakers4/silero-models</a></p>
 <p>Можно скачать с сайта <a href="https://pytorch.org/ ">https://pytorch.org/ </a>и установить pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 , возможно для новых видеокарт будет лучше выбрать CUDA 12.1</p>
 </div>
-<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:16;">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:17;">
 <img src="images/2024%2d06%2d18_201606.jpg" id="Image1" alt="" width="493" height="229">
 </div>
 <div id="wb_Text15">
 <span style="color:#212529;font-family:Arial;font-size:27px;">потом скачать silero models <a href="https://github.com/snakers4/silero-models ">https://github.com/snakers4/silero-models </a>и закинуть их в папку silero</span>
 </div>
-<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:19;">
 <img src="images/2024%2d06%2d18_202730.jpg" id="Image2" alt="" width="493" height="353">
 </div>
 <div id="wb_Text11">
 <span style="color:#000000;font-family:Arial;font-size:27px;">или скачать отсюда, распаковать и в программе указать путь к папке silero.<br>silero ( архив из 3 частей) = 2.3 GB<br>Самые быстрые модули работают на собственном коде и имеют логотип .NET (Yandex и EdgeTTS)!</span>
 </div>
-<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:20;">
+<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:21;">
 <img src="" id="Image7" alt="">
 </div>
 </div>
@@ -255,10 +254,10 @@ $(document).ready(function()
 <p>Модули с этим смайловым значком используют встроенную в консольное приложение (bal4web.exe и bal4yndx.exe) опцию работы со словарями.</p>
 <p>\bal1web\bal4web\readme.rus.txt</p>
 </div>
-<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:23;">
+<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:24;">
 <img src="images/2024%2d06%2d28_165520.jpg" id="Image6" alt="" width="523" height="352">
 </div>
-<div id="wb_Image8" style="display:block;width:100%;height:auto;z-index:24;">
+<div id="wb_Image8" style="display:block;width:100%;height:auto;z-index:25;">
 <img src="images/2024%2d06%2d28_180353.jpg" id="Image8" alt="" width="523" height="40">
 </div>
 <div id="wb_Text16">
@@ -266,7 +265,7 @@ $(document).ready(function()
 <p>По опыту использования.</p>
 <p>Если, например взять словари для Яндекса из Демагог</p>
 </div>
-<div id="wb_Image9" style="display:block;width:100%;height:auto;z-index:26;">
+<div id="wb_Image9" style="display:block;width:100%;height:auto;z-index:27;">
 <img src="images/2024%2d06%2d28_170848.jpg" id="Image9" alt="" width="523" height="626">
 </div>
 <div id="wb_Text17">
@@ -275,7 +274,7 @@ $(document).ready(function()
 <p>Для озвучки в модулях EDGE, EdgeTTS можно подключать свой словарь и его пополнять.</p>
 <p>1.dic</p>
 </div>
-<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:28;">
+<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:29;">
 <img src="images/2024%2d06%2d28_171519.jpg" id="Image10" alt="" width="523" height="131">
 </div>
 <div id="wb_Text18">
@@ -295,7 +294,7 @@ $(document).ready(function()
 </div>
 </div>
 <div id="tabs1-page-5">
-<div id="wb_MediaPlayer1" style="display:block;width:100%;z-index:30;">
+<div id="wb_MediaPlayer1" style="display:block;width:100%;z-index:31;">
 <video id="MediaPlayer1" autoplay controls>
 <source src="https://korobovsp.github.io/bal1web/bal1web.mp4" type="video/mp4">
 </video>
@@ -311,7 +310,7 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:32;">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:33;">
 <div id="wb_Text5">
 <p><a href="https://disk.yandex.ru/d/HRc4D0av4wE4Jw">СКАЧАТЬ&nbsp;МОДУЛИ</a></p>
 </div>
@@ -354,7 +353,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:39;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:40px;height:45px;text-align:center;z-index:40;">
 <a href="https://t.me/bal1web"><div id="FontAwesomeIcon6"><i class="fa fa-brands fa-telegram"></i></div></a>
 </div>
 </div>

@@ -58,9 +58,9 @@ body
    max-width: 8.33333333%;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -70,13 +70,13 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 83.33333333%;
-   max-width: 83.33333333%;
+   flex-basis: 75%;
+   max-width: 75%;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -86,13 +86,13 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 8.33333333%;
-   max-width: 8.33333333%;
+   flex-basis: 16.66666667%;
+   max-width: 16.66666667%;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
@@ -875,7 +875,7 @@ body
    font-size: 40px;
    line-height: 45px;
    vertical-align: middle;
-   width: 39px;
+   width: 40px;
 }
 #wb_FontAwesomeIcon6:hover #FontAwesomeIcon6 i
 {
